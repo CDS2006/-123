@@ -1,0 +1,35 @@
+size(1000, 1000);
+background(225);
+beginShape();
+fill(0, 255, 0);
+vertex(250, 150);
+vertex(300, 250);
+vertex(280, 350);
+vertex(200, 450);
+vertex(370, 450);
+vertex(400, 360);
+vertex(500, 320);
+vertex(440, 290);
+vertex(520, 230);
+
+endShape(CLOSE);
+
+beginShape();
+fill(255, 0, 0);
+vertex(580, 230);
+vertex(580, 255);
+vertex(650, 230);
+vertex(650, 250);
+vertex(670, 250);
+vertex(650, 270);
+vertex(650, 280);
+vertex(610, 265);
+vertex(610, 280);
+vertex(530, 260);
+endShape(CLOSE);
+
+strokeWeight(6);
+point(440, 230);
+
+
+
