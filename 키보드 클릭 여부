@@ -1,0 +1,13 @@
+int x=480;
+int y=480;
+
+void setup() {
+  size(1000, 1000);
+}
+void draw() {
+  background(204);
+    line(100,100,900,900);
+    if(keyPressed){
+      line(100,900,900,100);
+    }
+}
