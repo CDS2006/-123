@@ -1,0 +1,15 @@
+float angle = 0.0;
+float angleDirection=1;
+float speed=0.005;
+
+void setup(){
+  size(1000,1000);
+  rectMode(CENTER);
+}
+
+void draw(){
+    background(255,0,0);
+    translate(mouseX,mouseY);
+    scale(mouseX/60.0);
+    rect(0,0,30,30);
+}
