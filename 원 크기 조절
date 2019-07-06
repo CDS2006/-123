@@ -1,0 +1,20 @@
+int x=500;
+int y=500;
+int radius=5;
+
+void setup() {
+  size(1000, 1000);
+  ellipseMode(RADIUS);
+}
+void draw() {
+  background(204);
+  float d=dist(mouseX, mouseY, x, y);
+  if (d>radius) {
+    radius++;
+    fill(0, 0, 255);
+  } else {
+    radius--;
+    fill(255);
+  }
+  ellipse(x, y, radius, radius);
+}
