@@ -1,0 +1,18 @@
+float spead = 1;
+int diameter=20;
+float x,y;
+
+void setup() {
+  size(500,500);
+  x=width/2;
+  y=height/2;
+  frameRate(500);
+}
+
+void draw() {
+   x+=random(-spead,spead);  
+   y+=random(-spead,spead);
+   x=constrain(x,0,width);
+   y=constrain(y,0,height);
+   ellipse(x,y,diameter,diameter);
+}
