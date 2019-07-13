@@ -1,0 +1,14 @@
+
+PShape network;
+
+void setup(){
+  size(2000,1000);
+  shapeMode(CENTER);
+  network=loadShape("network.svg");
+}
+
+void draw(){
+  background(0);
+  float diameter=map(mouseX,0,width,10,1500);
+  shape(network,500,500,diameter,diameter);
+}
