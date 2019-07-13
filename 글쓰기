@@ -1,0 +1,15 @@
+PFont font;
+
+void setup(){
+  size(500,500);
+  font=createFont("SourceCodePro-Regular.ttf",32);
+  textFont(font);
+}
+
+void draw(){
+  background(100);
+  textSize(32);
+  text("That's one small stop for man...",25,60);
+  textSize(16);
+  text("That's one small stop for man...",27,90);
+}
